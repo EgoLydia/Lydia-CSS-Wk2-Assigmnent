@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment Week2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div>
+                <img class="logo" src="./pngroyale.com-Filmhouse-Cinemas-Logo-1024x354.png" alt="LOGO">
+            </div>
+            <!-- <div class="hamburger">☰</div> -->
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Cinemas</a>
+                <a href="#">Book A Ticket</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section class="table">
+        <h2>Movie Showtime For The Week</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Movie Title</th>
+                    <th>Release Date</th>
+                    <th>Genre</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I am Nazzy</td>
+                    <td>April 1, 2022</td>
+                    <td>Drama</td>
+                    <td>1hours 58mins</td>
+                </tr>
+                <tr>
+                    <td>Morbius</td>
+                    <td>March 31, 2022</td>
+                    <td>Action</td>
+                    <td>1hours 44mins</td>
+                </tr>
+                <tr>
+                    <td>The Batman</td>
+                    <td>March 4, 2022</td>
+                    <td>Action, Sci-Fi, Thriller</td>
+                    <td>3hours 00mins</td>
+                </tr>
+                <tr>
+                    <td>Uncharted</td>
+                    <td>February 11, 2022</td>
+                    <td>Action</td>
+                    <td>1hours 58mins</td>
+                </tr>
+                <tr>
+                    <td>Turning Red</td>
+                    <td>March 11, 2022</td>
+                    <td>Adventure, Animation</td>
+                    <td>1hours 41mins</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <section class="form">
+        <div>
+            <h2>Book A Ticket</h2>
+            <form>
+                <div>
+                    <label for="name">Your name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div><br>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="email" placeholder="Enter your email">
+                </div><br>
+                <div>
+                    <label for="movies">Select a movie</label>   
+                 <div>
+                        <input type="radio" id="nazzy" name="movie" value="nazzy">
+                        <label for="nazzy">I am Nazzy</label><br>       
+                        <input type="radio" id="morbius" name="movie" value="morbius">
+                        <label for="morbius">Morbius</label><br>           
+                        <input type="radio" id="batman" name="movie" value="batman">
+                        <label for="batman">The Batman</label><br>           
+                        <input type="radio" id="uncharted" name="movie" value="uncharted">
+                        <label for="uncharted">Uncharted</label><br>           
+                        <input type="radio" id="red" name="movie" value="red">
+                        <label for="red">Turning Red</label><br>           
+                    </div>
+                 </div><br>
+                 <div>
+                    <label for="movies">Select Cinema</label>   
+                     <select name="cinema" id="cinema">
+                        <option disabled selected>Please Select</option>
+                        <option value="lagos"> Lagos</option>
+                        <option value="portharcourt">Portharcourt</option>
+                        <option value="abuja">Abuja</option>
+                        <option value="benin">Benin City</option>
+                     </select>
+                 </div><br>
+                 <div>
+                     <label for="time">Select Time</label>
+                    <select name="time" id="time">
+                       <option disabled selected>Please Select</option>
+                       <option value="10am"> 10:00am</option>
+                       <option value="2pm">2:00pm</option>
+                       <option value="5pm">5:00pm</option>
+                       <option value="9pm"> 9:00pm</option>
+                    </select>
+                </div><br>
+                 <div>
+                     <label for="date">Choose your date</label>
+                     <input type="date" name="date" id="date">
+                 </div><br>
+                 <div>
+                    <label for="robot-quest">Are you a robot?</label>
+                    <input type="checkbox" name="yes" id="yes" value="Yes">  
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" name="no" id="no" value="No">  
+                    <label for="no">No</label>     
+                    </div><br>
+                 <input onclick="alert('Your ticket has been booked!')" type="submit">
+            </form>
+        </div>
+        <img class="movie-img" src="./movies.jpg" alt="popcorn">
+    </section>
+    <footer>
+        <p class="footer-text">&copy; 2022-Portfolio design by Lydia Ego</p>
+    </footer>
+</body>
+</html>
