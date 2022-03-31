@@ -10,13 +10,15 @@ body {
 .logo {
   margin-top: 20px;
   width: 100px;
+  margin-left: 20px;
 }
 
 nav {
   height: 70px;
   background-color: #fefefe;
   box-shadow: 9px 11px 37px 0px #b59eb5;
-}
+  position: relative;
+  }
 
 .nav-container {
   box-sizing: border-box;
@@ -26,10 +28,38 @@ nav {
   min-width: 60%;
 }
 
+.hamburger{
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.hamburger:focus .side-nav{
+    display: block;
+}
+
+.side-nav{
+    position: absolute;
+    width: 100%;
+    bottom: -160px;
+    left: 0;
+    background-color: #000000;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+.side-nav-links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
 .nav-links a {
   text-decoration: none;
   color: #000000;
   margin: 10px;
+  display: none;
 }
 
 table {
@@ -131,10 +161,14 @@ footer {
     margin: 25px;
   }
 
-  /* .hamburger{
-        visibility: hidden;
-    }
-     */
+  .hamburger{
+display: none; 
+   }
+   .logo {
+    margin-top: 20px;
+    width: 100px;
+  }
+  
   form {
     border: 0 solid black;
     padding: 20px;
