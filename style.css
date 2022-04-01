@@ -3,6 +3,7 @@ body {
   padding: 0;
   background: #d7f0ec;
 }
+
 * {
   font-family: "Nunito", sans-serif;
 }
@@ -18,7 +19,7 @@ nav {
   background-color: #fefefe;
   box-shadow: 9px 11px 37px 0px #b59eb5;
   position: relative;
-  }
+}
 
 .nav-container {
   box-sizing: border-box;
@@ -28,31 +29,32 @@ nav {
   min-width: 60%;
 }
 
-.hamburger{
-    display: block;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 200px;
+.hamburger {
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 200px;
 }
 
-.hamburger:focus .side-nav{
-    display: block;
+.hamburger:focus .side-nav {
+  display: block;
 }
 
-.side-nav{
-    position: absolute;
-    width: 100%;
-    bottom: -160px;
-    left: 0;
-    background-color: #000000;
-    padding: 10px;
-    box-sizing: border-box;
-    display: none;
+.side-nav {
+  position: absolute;
+  width: 100%;
+  bottom: -160px;
+  left: 0;
+  background-color: #000000;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
 }
-.side-nav-links a{
-    display: block;
-    color: white;
-    text-decoration: none;
+
+.side-nav-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-links a {
@@ -110,21 +112,24 @@ td:hover {
 h2:nth-of-type(1) {
   text-align: center;
 }
+
 .movie-img {
   display: none;
 }
+
 form {
   border: 0 solid black;
-  padding: 20px;
   background-color: #ffffff;
   box-shadow: -12px 5px 80px 0px rgb(75, 109, 163);
   border-radius: 10px;
+  padding: 20px;
 }
 
 footer {
   background-color: #000000;
   padding: 50px;
 }
+
 .footer-text {
   color: white;
   text-align: center;
@@ -132,10 +137,10 @@ footer {
 
 @media (min-width: 1080px) {
   nav {
-    width: 100%;
-    height: 70px;
     background-color: #fefefe;
     box-shadow: 9px 11px 37px 0px #b59eb5;
+    height: 70px;
+    width: 100%;
   }
 
   .nav-container {
@@ -148,40 +153,42 @@ footer {
   }
 
   .nav-links a {
+    color: #000000;
     display: inline-block;
     margin: 10px;
     padding-top: 20px;
     text-decoration: none;
-    color: #000000;
   }
 
   .form {
     display: flex;
-    padding: 20px;
     margin: 25px;
+    padding: 20px;
   }
 
-  .hamburger{
-display: none; 
-   }
-   .logo {
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
     margin-top: 20px;
     width: 100px;
   }
-  
+
   form {
     border: 0 solid black;
-    padding: 20px;
     background-color: #ffffff;
     box-shadow: -12px 5px 80px 0px rgb(75, 109, 163);
     border-radius: 10px;
+    padding: 20px;
     width: 100%;
   }
+
   .movie-img {
+    display: block;
     height: 60%;
     margin-left: auto;
     margin-top: 150px;
     width: 50%;
-    display: block;
   }
 }
