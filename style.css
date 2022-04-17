@@ -52,7 +52,6 @@ nav {
 }
 
 .table, .form{
-  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -112,7 +111,6 @@ td:hover {
 
 .form {
   padding: 20px;
-  /* margin: 25px; */
 }
 
 h2:nth-of-type(1) {
@@ -141,7 +139,24 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 1080px) {
+@media (min-width:768px) {
+  .table, .form{
+    max-width: 80%;
+  }  
+
+  .nav-container{
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .hamburger {
+    margin-left: auto;
+  }
+  
+  
+}
+
+@media (min-width: 1024px) and (min-width: 1280px) and (min-width: 1536px) {
   nav {
     background-color: #fefefe;
     box-shadow: 9px 11px 37px 0px #b59eb5;
@@ -155,7 +170,7 @@ footer {
     height: 70px;
     justify-content: space-between;
     margin: 0 auto;
-    width: 60%;
+    max-width: 80%;
   }
 
   .nav-links a {
@@ -168,7 +183,6 @@ footer {
 
   .form {
     display: flex;
-    /* margin: 25px; */
     padding: 20px;
   }
 
@@ -180,7 +194,9 @@ footer {
     margin-top: 20px;
     width: 100px;
   }
-
+  .table, .form{
+    max-width: 70%;
+  }  
   form {
     border: 0 solid black;
     background-color: #ffffff;
